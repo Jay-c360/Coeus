@@ -9,15 +9,40 @@
 <body>
 
 	<header>
+
 		<div class="container">
+			<span class="open-slide">
+			<a href="#" onclick="OpenSlideMenu()">
+				<svg Width="30" height="30">
+					<path d="M0,5 30,5" stroke="#fff"
+					stroke-width="5"/>
+					<path d="M0,14 30,14" stroke="#fff"
+					stroke-width="5"/>
+					<path d="M0,23 30,23" stroke="#fff"
+					stroke-width="5"/>
+				</svg>
+			</a>
+		</span>
+
+		<!-----------------------SideMenu-------------->
+
+	<div id="side-menu" class="side-nav">
+		<a href=# class="btn-close" onclick="CloseSlideMenu()">&times;</a>
+		<a href="">Prestamos</a>
+		<a href="">Entregas Tardias</a>
+		<a href="">Multas</a>
+		<a href="">Gestion Prestamos</a>
+		<a href="">Facturacion</a>
+	</div>
+
 			<div id="branding">
 				<h1><span class="highlight">Coeus</span></h1>
 			</div> 
 			<nav>
 				<ul>
 				<li ><a href="index.html">Inicio</a></li>
-				<li class="current"><a href="libros.html">Libros</a></li>
-				<li><a href="servicios.html">Servicios</a></li>
+				<li ><a href="libros.php">Libros</a></li>
+				<li class="current"><a href="servicios.html">Servicios</a></li>
 				</ul>
 			</nav>
 		</div>
@@ -45,6 +70,6 @@
 	<footer>
 		<p>Coeus, Copyright &copy; 2018</p>
 	</footer>
-	
+	<script src="script.js"></script>
 </body>
 </html>
