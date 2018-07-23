@@ -55,33 +55,48 @@
 	</header>
 	
 	
-	<section id="showcase">
-		<div class="container">
-			<h1>Biblioteca Coeus</h1>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit aperiam repellendus soluta sunt, atque autem qui fuga rerum, et cumque laudantium corporis dolores animi sequi placeat minus quisquam repellat, quibusdam!</p>
-		</div>
-	</section>
-	
+	<div class="formulario">
+		<h2>Registro de Empleados</h2>
+		<form action=" " method="POST">
+			<p>
+			<label> Primer Nombre</label>
+			<input type="text" name="p_nombre">
+			</p>
+			<p>
+			<label> Segundo Nombre</label>
+			<input type="text" name="s_nombre">
+			</p>
+			<p>
+			<label>Primer Apellido</label>
+			<input type="text" name="p_apellido">
+			</p>
+			<p>
+			<label>Segundo Apellido</label>
+			<input type="text" name="s_apellido">
+			</p>
+			<p>
+			<label>Correo Electronico</label>
+			<input type="email" name="correo">
+			</p>
+			<p>
+			<label>Numero de Identidad</label>
+			<input type="int" name="num_cedula">
+			</p>
+			<p>
+			<label>Fecha de Nacimiento</label><br>
+			<input type="date" name="fecha_nacimiento">
+			</p>
+			<p>
+			<label>Fecha de Ingreso</label><br>
+			<input type="date" name="fecha_ingreso">
+			</p>
+			<p class="full">
+			<button type="submit" name="submit">Registrar</button>
+			</p>
+		</form>
+	</div> 
 
-	<section id="boxes">
-		<div class="container">
-			<div class="box">
-				<img src="./img/stock1.png">
-				<h3>titulo 1</h3>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim fugit totam illo aspernatur accusamus deleniti porro quis autem id voluptas error, repellat atque rem possimus ex quidem voluptates cupiditate quaerat.</p>
-			</div>
-			<div class="box">
-				<img src="./img/stock2.png">
-				<h3>titulo 2</h3>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim fugit totam illo aspernatur accusamus deleniti porro quis autem id voluptas error, repellat atque rem possimus ex quidem voluptates cupiditate quaerat.</p>
-			</div>
-			<div class="box">
-				<img src="./img/stock3.png">
-				<h3>titulo 3</h3>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim fugit totam illo aspernatur accusamus deleniti porro quis autem id voluptas error, repellat atque rem possimus ex quidem voluptates cupiditate quaerat.</p>
-			</div>
-		</div>
-	</section>
+	
 
 	<footer>
 		<p>Coeus, Copyright &copy; 2018</p>
