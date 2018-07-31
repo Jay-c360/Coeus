@@ -1,3 +1,6 @@
+<?php 
+	include("../php/persona.php");
+ ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -89,13 +92,23 @@
 
 	if(isset($_POST['submit']))
 	{
-		echo $_POST['p_nombre'];
-		echo $_POST['s_nombre'];
-		echo $_POST['p_apellido'];
-		echo $_POST['s_apellido'];
-		echo $_POST['correo'];
-		echo $_POST['num_cedula'];
-		echo $_POST['fecha_nacimiento'];
+		$_POST['p_nombre'];
+		$_POST['s_nombre'];
+		$_POST['p_apellido'];
+		$_POST['s_apellido'];
+		$_POST['correo'];
+		$_POST['num_cedula'];
+		$_POST['fecha_nacimiento'];
+
+		$persona = new persona($_POST['p_nombre'],
+							  $_POST['s_nombre'],
+							  $_POST['p_apellido'],
+							  $_POST['s_apellido'],
+							  $_POST['correo'],
+							  $_POST['num_cedula'],
+							  $_POST['fecha_nacimiento']);
+		$persona->RegistrarPersona();
+
 	}
 
  ?>

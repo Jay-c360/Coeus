@@ -6,7 +6,7 @@ include("conexion.php");
 class persona
 { 
 
-	protected $id_persona = 2;
+	public $id_persona = 7;
 	protected $p_nombre; 
 	protected $s_nombre;
 	protected $p_apellido;
@@ -88,15 +88,16 @@ class persona
 			 public function RegistrarPersona(){
 			 	$conexion = new conexion;
 				$sql = "INSERT INTO persona(id_persona,p_nombre, s_nombre, p_apellido, s_apellido, correo,num_cedula,fecha_nacimiento)
-					VALUES ($this->id_persona,'$this->p_nombre','$this->s_nombre','$this->p_apellido','$this->s_apellido','$this->correo','$this->num_cedula',cast('$this->fecha_nacimiento' AS DATE));";
+					VALUES ($this->id_persona,'$this->p_nombre','$this->s_nombre','$this->p_apellido','$this->s_apellido','$this->correo','$this->num_cedula','$this->fecha_nacimiento');";
 				$query = $conexion->consulta($sql);
 					if(!$query)
-					{
+					/*{
 						echo "No se pudo ejecutar consulta";
-					}else
+					}else*/
 					{
-						echo "Consulta realizada";
+						//echo "Consulta realizada";
 						$this->id_persona++;
+						
 					}
 
 			 }

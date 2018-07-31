@@ -18,13 +18,13 @@
 			public function consulta($sql)
 			{
 				$query = pg_query($this->dbcon,$sql);
-				if(!$query)
+				/*if(!$query)
 				{
 					echo "No se pudo ejecutar la consulta";
 				}else
 				{
 					echo "Consulta realizada";
-				}
+				}*/
 			}
 			
 		}
