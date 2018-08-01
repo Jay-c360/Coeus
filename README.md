@@ -5,6 +5,7 @@
 <li>HTML</li>
 <li>CSS</li>
 <li>Javascript(libreria Jquery)</li>
+<li>Bootstrap(Framework)</li>
 </ul><br>
 
 <h3>Back-end</h3>
