@@ -4,7 +4,8 @@
 <ul>
 <li>HTML</li>
 <li>CSS</li>
-<li>Javascript(libreria Jquery)</li>
+<li>Javascript</li>
+<li>Jquery(Libreria Javascript)/li>
 <li>Bootstrap(Framework)</li>
 </ul><br>
 
