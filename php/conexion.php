@@ -8,7 +8,7 @@
 			protected $dbcon; 
 			protected $stat;
 
-			public function Conexion()
+			public function __construct()
 			{
 				$this->dbcon = pg_connect($this->connString);
 				$this->stat = pg_connection_status($this->dbcon);

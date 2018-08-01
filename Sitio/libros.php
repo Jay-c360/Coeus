@@ -107,6 +107,7 @@
 							  $_POST['correo'],
 							  $_POST['num_cedula'],
 							  $_POST['fecha_nacimiento']);
+
 		$persona->RegistrarPersona();
 
 	}
